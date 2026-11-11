@@ -23,7 +23,8 @@ Miyu 的自制软件包：脚本工具、检索器、生活服务。
 给 Miyu 用的黑话搜索引擎。`中转站` 会自动扩展成 `API中转 / relay / 2api / 号池 / 倍率`，Bing + 360 双引擎，自动对 linux.do、v2ex、GitHub 做站内检索，并且**把「怎么选 / 排行 / 推荐」的带货文压下去，把「跑路 / 判刑 / 曝光」的实锤顶上来**。
 
 ```bash
-miyu pkg install https://github.com/Mymiyu-tool/gray-intel/releases/download/v0.1.0/gray-intel-0.1.0.miyu
+curl -LO https://github.com/Mymiyu-tool/gray-intel/releases/download/v0.1.0/gray-intel-0.1.0.miyu
+miyu pkg install gray-intel-0.1.0.miyu
 ```
 
 <img src="https://raw.githubusercontent.com/Mymiyu-tool/luckin-coffee/main/assets/icon.png" width="28" align="left" alt="">
@@ -34,7 +35,8 @@ miyu pkg install https://github.com/Mymiyu-tool/gray-intel/releases/download/v0.
 查附近门店、看菜单、预览价格、下单、查单、取消。走本机 `luckin` CLI 的登录态，不碰你的账号密码。
 
 ```bash
-miyu pkg install https://github.com/Mymiyu-tool/luckin-coffee/releases/download/v0.1.0/luckin-coffee-0.1.0.miyu
+curl -LO https://github.com/Mymiyu-tool/luckin-coffee/releases/download/v0.1.0/luckin-coffee-0.1.0.miyu
+miyu pkg install luckin-coffee-0.1.0.miyu
 ```
 
 ---
@@ -43,6 +45,7 @@ miyu pkg install https://github.com/Mymiyu-tool/luckin-coffee/releases/download/
 
 ```bash
 # Release 里的包文件
+curl -LO https://github.com/Mymiyu-tool/<repo>/releases/latest/download/<name>-<version>.miyu
 miyu pkg install <name>-<version>.miyu
 
 # 或者从源码目录

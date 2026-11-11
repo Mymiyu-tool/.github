@@ -14,8 +14,8 @@
 
 | 包 | 做什么 | 依赖 | 安装 |
 |---|---|---|---|
-| [**gray-intel**](https://github.com/Mymiyu-tool/gray-intel) · 灰产情报检索 | 黑话扩展、Bing + 360 双引擎、论坛站内 dork、软文降权 | Python 标准库 | `miyu pkg install gray-intel-0.1.0.miyu` |
-| [**luckin-coffee**](https://github.com/Mymiyu-tool/luckin-coffee) · 瑞幸咖啡 | 查门店、看菜单、预览、下单、查单、取消 | 本机 `luckin` CLI 已登录 | `miyu pkg install luckin-coffee-0.1.0.miyu` |
+| [**gray-intel**](https://github.com/Mymiyu-tool/gray-intel) · 灰产情报检索 | 黑话扩展、Bing + 360 双引擎、论坛站内 dork、软文降权 | Python 标准库 | `curl -LO https://github.com/Mymiyu-tool/gray-intel/releases/download/v0.1.0/gray-intel-0.1.0.miyu` 后 `miyu pkg install` |
+| [**luckin-coffee**](https://github.com/Mymiyu-tool/luckin-coffee) · 瑞幸咖啡 | 查门店、看菜单、预览、下单、查单、取消 | 本机 `luckin` CLI 已登录 | `curl -LO https://github.com/Mymiyu-tool/luckin-coffee/releases/download/v0.1.0/luckin-coffee-0.1.0.miyu` 后 `miyu pkg install` |
 
 ## 安装一个包
 
