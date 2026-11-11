@@ -49,6 +49,7 @@ miyu pkg install luckin-coffee-0.1.0.miyu
 | 包 | 说明 | 仓库 |
 |---|---|---|
 | **fake-id** | Generate complete fictional person profiles (identity, address, card, education, career, online persona) for form testing and fixtures | [Mymiyu-tool/fake-id](https://github.com/Mymiyu-tool/fake-id) |
+| **github-bot** | GitHub App bot for Miyu: installation tokens, repos, issues, PRs, releases, files and workflow dispatch | [Mymiyu-tool/github-bot](https://github.com/Mymiyu-tool/github-bot) |
 | **gray-intel** | Gray-market OSINT search for Miyu: slang expansion, dual engines, forum dorks, SEO-farm downranking | [Mymiyu-tool/gray-intel](https://github.com/Mymiyu-tool/gray-intel) |
 | **luckin-coffee** | Luckin Coffee ordering for Miyu: stores, menus, preview, create, detail and cancel orders through the local luckin CLI | [Mymiyu-tool/luckin-coffee](https://github.com/Mymiyu-tool/luckin-coffee) |
 <!-- packages:end -->
