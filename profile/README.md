@@ -41,6 +41,19 @@ miyu pkg install luckin-coffee-0.1.0.miyu
 
 ---
 
+## 全部包
+
+这份表格由仓库里的 workflow 自动从组织拉取，只收录带 `miyu-package` topic 的公开仓库。
+
+<!-- packages:start -->
+| 包 | 说明 | 仓库 |
+|---|---|---|
+| **gray-intel** | Gray-market OSINT search for Miyu: slang expansion, dual engines, forum dorks, SEO-farm downranking | [Mymiyu-tool/gray-intel](https://github.com/Mymiyu-tool/gray-intel) |
+| **luckin-coffee** | Luckin Coffee ordering for Miyu: stores, menus, preview, create, detail and cancel orders through the local luckin CLI | [Mymiyu-tool/luckin-coffee](https://github.com/Mymiyu-tool/luckin-coffee) |
+<!-- packages:end -->
+
+---
+
 ## 装法
 
 ```bash

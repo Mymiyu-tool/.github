@@ -1,0 +1,39 @@
+name: Sync package list
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [package-updated]
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rewrite profile README
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ORG: ${{ github.repository_owner }}
+        run: python scripts/sync_packages.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet; then
+            echo "nothing to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/README.md
+          git commit -m "profile: sync package list"
+          git push
