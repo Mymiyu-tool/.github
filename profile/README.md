@@ -68,6 +68,8 @@ miyu pkg install ./<repo>
 
 装完直接对 Miyu 说「用 xxx 工具帮我…」就行。
 
+> Miyu 官方源后续会收录社区包，收录后直接 `miyu pkg install <id>` 即可，不用再手动下载。在那之前走 Release 里的 `.miyu`。
+
 ## 写一个自己的
 
 Miyu 包 = 一个目录 + `package.toml` + `scripts/*.py`。脚本顶部的注释就是参数 Schema。
